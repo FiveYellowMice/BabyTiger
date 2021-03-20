@@ -1,0 +1,284 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 602BA980
+P 3500 3000
+F 0 "#PWR?" H 3500 2750 50  0001 C CNN
+F 1 "GND" H 3505 2827 50  0000 C CNN
+F 2 "" H 3500 3000 50  0001 C CNN
+F 3 "" H 3500 3000 50  0001 C CNN
+	1    3500 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 602BB4A2
+P 6900 3200
+F 0 "SW1" H 6900 3485 50  0000 C CNN
+F 1 "BTN_L" H 6900 3394 50  0000 C CNN
+F 2 "" H 6900 3400 50  0001 C CNN
+F 3 "~" H 6900 3400 50  0001 C CNN
+	1    6900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 602BBA77
+P 6100 3200
+F 0 "SW2" H 6100 3485 50  0000 C CNN
+F 1 "BTN_X" H 6100 3394 50  0000 C CNN
+F 2 "" H 6100 3400 50  0001 C CNN
+F 3 "~" H 6100 3400 50  0001 C CNN
+	1    6100 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 602BBD8F
+P 5300 3200
+F 0 "SW3" H 5300 3485 50  0000 C CNN
+F 1 "BTN_O" H 5300 3394 50  0000 C CNN
+F 2 "" H 5300 3400 50  0001 C CNN
+F 3 "~" H 5300 3400 50  0001 C CNN
+	1    5300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 602BC02B
+P 4500 3200
+F 0 "SW4" H 4500 3485 50  0000 C CNN
+F 1 "BTN_R" H 4500 3394 50  0000 C CNN
+F 2 "" H 4500 3400 50  0001 C CNN
+F 3 "~" H 4500 3400 50  0001 C CNN
+	1    4500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 602BFF78
+P 6700 3450
+F 0 "C1" H 6815 3496 50  0000 L CNN
+F 1 "0.1µF" H 6815 3405 50  0000 L CNN
+F 2 "" H 6738 3300 50  0001 C CNN
+F 3 "~" H 6700 3450 50  0001 C CNN
+	1    6700 3450
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 602C055D
+P 5900 3450
+F 0 "C2" H 6015 3496 50  0000 L CNN
+F 1 "0.1µF" H 6015 3405 50  0000 L CNN
+F 2 "" H 5938 3300 50  0001 C CNN
+F 3 "~" H 5900 3450 50  0001 C CNN
+	1    5900 3450
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 602C0787
+P 5100 3450
+F 0 "C3" H 5215 3496 50  0000 L CNN
+F 1 "0.1µF" H 5215 3405 50  0000 L CNN
+F 2 "" H 5138 3300 50  0001 C CNN
+F 3 "~" H 5100 3450 50  0001 C CNN
+	1    5100 3450
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 602C0953
+P 4300 3450
+F 0 "C4" H 4415 3496 50  0000 L CNN
+F 1 "0.1µF" H 4415 3405 50  0000 L CNN
+F 2 "" H 4338 3300 50  0001 C CNN
+F 3 "~" H 4300 3450 50  0001 C CNN
+	1    4300 3450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6700 2850 6700 3200
+Wire Wire Line
+	5900 2850 5900 3200
+Wire Wire Line
+	5100 2850 5100 3200
+Wire Wire Line
+	4300 2850 4300 3200
+$Comp
+L Device:R R3
+U 1 1 602C8FDE
+P 7100 3800
+F 0 "R3" H 7030 3754 50  0000 R CNN
+F 1 "6.6kΩ" H 7030 3845 50  0000 R CNN
+F 2 "" V 7030 3800 50  0001 C CNN
+F 3 "~" H 7100 3800 50  0001 C CNN
+	1    7100 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 602C9658
+P 3550 3650
+F 0 "R2" H 3620 3696 50  0000 L CNN
+F 1 "1kΩ" H 3620 3605 50  0000 L CNN
+F 2 "" V 3480 3650 50  0001 C CNN
+F 3 "~" H 3550 3650 50  0001 C CNN
+	1    3550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 602C9C88
+P 3900 3950
+F 0 "R1" V 3693 3950 50  0000 C CNN
+F 1 "10kΩ" V 3784 3950 50  0000 C CNN
+F 2 "" V 3830 3950 50  0001 C CNN
+F 3 "~" H 3900 3950 50  0001 C CNN
+	1    3900 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 602CF2E9
+P 6700 2650
+F 0 "J1" V 6664 2730 50  0000 L CNN
+F 1 "Conn_BTN_L" V 6573 2730 50  0000 L CNN
+F 2 "" H 6700 2650 50  0001 C CNN
+F 3 "~" H 6700 2650 50  0001 C CNN
+	1    6700 2650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 602CFD88
+P 5900 2650
+F 0 "J2" V 5864 2730 50  0000 L CNN
+F 1 "Conn_BTN_X" V 5773 2730 50  0000 L CNN
+F 2 "" H 5900 2650 50  0001 C CNN
+F 3 "~" H 5900 2650 50  0001 C CNN
+	1    5900 2650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 602D01C5
+P 5100 2650
+F 0 "J3" V 5064 2730 50  0000 L CNN
+F 1 "Conn_BTN_O" V 4973 2730 50  0000 L CNN
+F 2 "" H 5100 2650 50  0001 C CNN
+F 3 "~" H 5100 2650 50  0001 C CNN
+	1    5100 2650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 602D068E
+P 4300 2650
+F 0 "J4" V 4264 2730 50  0000 L CNN
+F 1 "Conn_BTN_R" V 4173 2730 50  0000 L CNN
+F 2 "" H 4300 2650 50  0001 C CNN
+F 3 "~" H 4300 2650 50  0001 C CNN
+	1    4300 2650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6700 3200 6700 3300
+Connection ~ 6700 3200
+Wire Wire Line
+	5900 3200 5900 3300
+Connection ~ 5900 3200
+Wire Wire Line
+	5100 3200 5100 3300
+Connection ~ 5100 3200
+Wire Wire Line
+	4300 3200 4300 3300
+Connection ~ 4300 3200
+Wire Wire Line
+	7100 3200 7100 3650
+Wire Wire Line
+	6300 3200 6300 3950
+Wire Wire Line
+	6300 3950 5500 3950
+Wire Wire Line
+	4700 3200 4700 3950
+Connection ~ 4700 3950
+Wire Wire Line
+	4700 3950 4050 3950
+Wire Wire Line
+	5500 3200 5500 3950
+Connection ~ 5500 3950
+Wire Wire Line
+	5500 3950 4700 3950
+Wire Wire Line
+	3750 3950 3550 3950
+Wire Wire Line
+	3550 3950 3550 3800
+Wire Wire Line
+	7100 3950 7100 4100
+Wire Wire Line
+	7100 4100 3400 4100
+Wire Wire Line
+	3400 4100 3400 3350
+Wire Wire Line
+	3400 3350 3550 3350
+Wire Wire Line
+	3550 3350 3550 3500
+Wire Wire Line
+	3900 3650 4300 3650
+Wire Wire Line
+	6700 3650 6700 3600
+Wire Wire Line
+	5900 3600 5900 3650
+Connection ~ 5900 3650
+Wire Wire Line
+	5900 3650 6700 3650
+Wire Wire Line
+	5100 3600 5100 3650
+Connection ~ 5100 3650
+Wire Wire Line
+	5100 3650 5900 3650
+Wire Wire Line
+	4300 3600 4300 3650
+Connection ~ 4300 3650
+Wire Wire Line
+	4300 3650 5100 3650
+Wire Wire Line
+	3900 3650 3900 3350
+Wire Wire Line
+	3900 3350 3550 3350
+Connection ~ 3550 3350
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 60314298
+P 3550 2650
+F 0 "J5" V 3514 2562 50  0000 R CNN
+F 1 "Conn_GND" V 3423 2562 50  0000 R CNN
+F 2 "" H 3550 2650 50  0001 C CNN
+F 3 "~" H 3550 2650 50  0001 C CNN
+	1    3550 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 2850 3550 3000
+Wire Wire Line
+	3500 3000 3550 3000
+Connection ~ 3550 3000
+Wire Wire Line
+	3550 3000 3550 3350
+$EndSCHEMATC
